@@ -1,0 +1,27 @@
+{
+    "name": "yethee/date-form-bundle",
+    "type": "symfony-bundle",
+    "description": "This bundle fixed issue with timezone Europe/Moscow when used ICU < 54.1",
+    "keywords": ["form", "date-formatter"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yethee",
+            "email": "liquid.yethee@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/intl": "~2.3",
+        "symfony/framework-bundle": "~2.3",
+        "symfony/form": "~2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yethee\\DateFormBundle\\": ""
+        }
+    }
+}
