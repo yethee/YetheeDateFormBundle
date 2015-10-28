@@ -1,4 +1,4 @@
-# DateFormBundle
+# DateFormBundle [![Build Status](https://travis-ci.org/yethee/YetheeDateFormBundle.svg)](https://travis-ci.org/yethee/YetheeDateFormBundle)
 
 This bundle fixed issue with timezone **Europe/Moscow** for `date` and `datetime` form types, 
 when used ICU < 54.1.
