@@ -9,9 +9,6 @@
 
 namespace Yethee\DateFormBundle\Form\Extension;
 
-use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
-
 /**
  * DateTypeExtension
  *
@@ -24,6 +21,8 @@ class DateTypeExtension extends TypeExtension
      */
     public function getExtendedType()
     {
-        return method_exists(AbstractType::class, 'getBlockPrefix') ? DateType::class : 'date';
+        return method_exists('Symfony\Component\Form\AbstractType', 'getBlockPrefix')
+            ? 'Symfony\Component\Form\Extension\Core\Type\DateType'
+            : 'date';
     }
 }
